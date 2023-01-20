@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AuthContextProvider } from './Components/Store/auth_context';
+import Navbar from './Components/Layout/Navbar';
+
+import CourseList from './Components/Course/CourseList';
+import CourseDetails from './Components/Course/CourseDetails';
+import RegisterTeacher from './Components/Teacher/RegisterTeacher';
+import TeacherDetails from './Components/Teacher/TeacherDetails';
+import TeacherList from './Components/Teacher/TeacherList';
+import TeacherLogin from './Components/Teacher/TeacherLogin';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Router>
+			<AuthContextProvider>
+			<header>
+				<Navbar />
+			</header>
+			<main>
+				<Routes>
+					<Route path="/" element={<CourseList />} />
+					<Route path="/courses" element={<CourseList />} />
+          <Route path='/course/:courseId' element={<CourseDetails />} />
+					<Route path="/teachers" element={<TeacherList />} />
+          <Route path='/teacher/:teacherId' element={<TeacherDetails />} />
+					<Route path="/registerteacher" element={<RegisterTeacher />} />
+					<Route path="/login" element={<TeacherLogin />} />
+				</Routes>
+			</main>
+			</AuthContextProvider>
+		</Router>
+	);
 }
 
 export default App;

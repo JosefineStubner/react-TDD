@@ -1,0 +1,39 @@
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #3c0e0e;
+  ;
+  padding: 0 2rem;
+}
+
+.main-header h1 {
+  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #3c0e0e;
+    ;
+    padding: 0 2rem;
+  }
+  
+  .main-header h1 {
+    color: white;
+  }
+}

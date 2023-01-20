@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --background-color: #f4f4f4;
+  --primary-color: rgb(1, 5, 5);
+  --primary-text-color: #f4f4f4;
+  --secondary-text-color: #9c9b9b;
+  --primary-border-color: #606060;
+  --dark-color: rgb(1, 92, 75);
+  --navbar-primary-color: #3c0e0e;
+  --navbar-secondary-color: #dfdada;
+  --navbar-color: #f4f4f4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::placeholder {
+  color: var(--secondary-text-color);
+}
+
+:-ms-input-placeholder {
+  color: var(--secondary-text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--primary-color);
+  background: var(--background-color);
+}
+
+form {
+  width: 300px;
+  max-width: 300px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem;
+  max-width: 80%;
+}
+
+.details {
+  margin: 1rem 0;
+}
+
+.page-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+}
+
+.form-control {
+  margin: 0.8rem 0;
+}
+
+.form-control label,
+input {
+  width: 100%;
+}
+
+.form-control label {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.form-control input {
+  padding: 0.4rem 0.3rem;
+  border: solid 1px var(--primary-border-color);
+  border-radius: 5px;
+  outline: none !important;
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.btn:hover {
+  font-weight: 600;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+  font-weight: normal;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+h3 {
+  font-weight: 500;
+}
+
+a {
+  color: var(--dark-color);
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    width: 600px;
+    max-width: 600px;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+  }
+
+  .page-title {
+    font-size: 1.7rem;
+    margin: 1rem 0 1rem 0;
+  }
 }

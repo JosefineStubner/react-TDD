@@ -1,0 +1,35 @@
+.button {
+  font: inherit;
+  border: 1px solid #3f2191;
+  color: #3f2191;
+  background: none;
+  border-radius: 40px;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button-light {
+  font: inherit;
+  background: none;
+  border-radius: 40px;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #f4f4f4;
+  color: #f4f4f4;
+}
+.button:hover {
+  border: 2px solid #3f2191;
+}
+.button_light:hover {
+  border: 2px solid #f4f4f4;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none !important;
+}

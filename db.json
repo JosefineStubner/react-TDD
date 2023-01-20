@@ -1,0 +1,77 @@
+{
+  "courses": [
+    {
+      "courseId": 1092,
+      "title": "IT-säkerhet",
+      "length": 4,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "startDate": "23 feb 2023"
+    },
+    {
+      "courseId": 1134,
+      "title": "MongoDB",
+      "length": 8,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "startDate": "1 maj 2023"
+    },
+    {
+      "courseId": 1203,
+      "title": "DevOps steg 1",
+      "length": 6,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "startDate": "5 mars 2023"
+    },
+    {
+      "courseId": 1264,
+      "title": "CSS som trollkonst",
+      "length": 10,
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "startDate": "3 feb 2023"
+    },
+    {
+      "courseId": "560f9b37-1574-40a8-95ec-33a0c6594eb6",
+      "title": "React för mig",
+      "length": "4",
+      "description": "Its a good book yo.",
+      "startDate": "2023-01-20"
+    }
+  ],
+  "teachers": [
+    {
+      "teacherId": 1,
+      "firstName": "Erik",
+      "lastName": "Svensson",
+      "personalNumber": "791022",
+      "email": "erik@larare.com",
+      "phone": "0736754233",
+      "competencies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "teacherId": 2,
+      "firstName": "Lars",
+      "lastName": "Hilde",
+      "personalNumber": "630213",
+      "email": "lars@larare.com",
+      "phone": "0702345677",
+      "competencies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "teacherId": 3,
+      "firstName": "Agneta",
+      "lastName": "Larsson",
+      "personalNumber": "680425",
+      "email": "agneta@larare.com",
+      "phone": "0704521123",
+      "competencies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "teacherId": 4,
+      "firstName": "Jennifer",
+      "lastName": "Schildt",
+      "personalNumber": "881101",
+      "email": "jennifer@larare.com",
+      "phone": "0736889123",
+      "competencies": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+}
