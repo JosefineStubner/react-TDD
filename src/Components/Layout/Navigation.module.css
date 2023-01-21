@@ -34,16 +34,4 @@
     margin: 0;
     margin-left: 2rem;
   }
-  
-  .nav a {
-    text-decoration: none;
-    color: white;
-    transition: 3ms;
-  }
-  
-  .nav a:hover,
-  .nav a:active {
-    color: #ffffff;
-    font-weight: 700;
-  }
 }

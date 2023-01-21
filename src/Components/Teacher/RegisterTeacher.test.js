@@ -14,7 +14,7 @@ describe('RegisterTeacher component', () => {
     expect(RegisterTeacherLink).toBeInTheDocument();
   });
 
-  test('page should have a heading with expeted text', () => {
+  test('page should have a heading with expected text', () => {
     setup();
 
     const RegisterTeacherLink = screen.getByRole('heading');

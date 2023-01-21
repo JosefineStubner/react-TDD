@@ -1,13 +1,6 @@
 import { useRef } from 'react';
 
-// useState,
-
 const RegisterTeacher = () => {
-  // const [buttonDisable, setButtonDisabled] = useState(true);
-  // const [password, setPassword] = useState('');
-  // const [confirmPassword, setConfirmPassword] = useState('');
-
-  //Funktion för att validera inputfält
 
   const firstNameInputRef = useRef();
   const lastNameInputRef = useRef();
@@ -25,18 +18,6 @@ const RegisterTeacher = () => {
     compentenciesInputRef.current.value = '';
   };
 
-  // const onChangePasswordHandler = (e) => {
-  //   const value = e.target.value;
-  //   setPassword(value);
-  //   setButtonDisabled(value !== confirmPassword);
-  // };
-
-  // const onChangeConfirmPasswordHandler = (e) => {
-  //   const value = e.target.value;
-  //   setConfirmPassword(value);
-  //   setButtonDisabled(value !== password);
-  // };
-
   const onSaveHandler = (e) => {
     e.preventDefault();
 
@@ -46,8 +27,6 @@ const RegisterTeacher = () => {
     const email = emailInputRef.current.value;
     const phone = phoneInputRef.current.value;
     const competencies = compentenciesInputRef.current.value;
-
-    // Obs! validera userName och email innan vi sparar till databasen...
 
     const body = { firstName, lastName, personalNumber, email, phone, competencies };
 
@@ -123,7 +102,6 @@ const RegisterTeacher = () => {
         <div className='form-control'>
           <button
             className='btn btn-primary'
-            // disabled={buttonDisable}
           >
             Registrera lärare
           </button>

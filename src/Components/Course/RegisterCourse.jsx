@@ -10,8 +10,6 @@ const RegisterCourse = (props) => {
 	const onSaveHandler = (e) => {
 		e.preventDefault();
 
-		// We should do validation here before we save the vehicle...
-
 		const course = {
 			courseId: uuidv4(),
 			title: courseTitleInputRef.current.value,
@@ -23,7 +21,7 @@ const RegisterCourse = (props) => {
 	};
 
 	return (
-		<form onSubmit={onSaveHandler}>
+		<form className='modal-form' onSubmit={onSaveHandler}>
 			<div className="form-control">
 				<label htmlFor="title">Kursnamn:</label>
 				<input id="title" placeholder="title" ref={courseTitleInputRef} />

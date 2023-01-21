@@ -34,20 +34,3 @@ const TeacherList = () => {
 };
 
 export default TeacherList;
-
-
-// {teachers.map((teacher, i) => {
-// 	return(
-		// <Teacher 
-		// 	data-testid='teacher'
-		// 	key={i}
-		// 	teacherId={teacher.teacherId}
-		// 	firstName={teacher.title}
-		// 	lastName={teacher.length}
-		// 	personalNumber={teacher.personalNumber}
-		// 	email={teacher.email}
-		// 	phone={teacher.phone}
-		// 	competencies={teacher.competencies}
-		// />
-// 	)
-// })}
